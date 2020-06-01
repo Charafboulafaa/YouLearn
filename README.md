@@ -26,6 +26,10 @@
 
 ### Wireframes
 
+![Main](https://imgur.com/a/rpNtmRk)
+
+- Main
+
 
 <br>
 
@@ -50,6 +54,8 @@ The Min Valuable Product for YouLearn is consisting of providing the basic featu
 | :----------: | :------------------------------------------------------------------------------------- |
 |    Axios     | Promise based HTTP client for the browser and node.js                                  |
 | React Router | Collection of navigational components that compose declaratively with your application |
+|     Jest     | Jest is a delightful JavaScript Testing Framework with a focus on simplicity.          |
+
 
 <br>
 
@@ -192,10 +198,11 @@ src
 | Clean the default boilerplate |    H     |      <1h       |      TBD      |     TBD     |
 | Header & Footer               |    L     |       1h       |      TBD      |     TBD     |
 | Search                        |    H     |       3h       |      TBD      |     TBD     |
-| SearchResults                 |    H     |       2h       |      TBD      |     TBD     |
+| SearchResults                 |    H     |       3h       |      TBD      |     TBD     |
 | Player                        |    H     |       1h       |      TBD      |     TBD     |
-| VideoList                     |    H     |       2h       |      TBD      |     TBD     |
-| Courses                       |    H     |       3h       |      TBD      |     TBD     |
+| VideoList                     |    H     |       3h       |      TBD      |     TBD     |
+| Courses                       |    H     |       4h       |      TBD      |     TBD     |
+| Jest Testing                  |    H     |       5h       |      TBD      |     TBD     |
 
 <br>
 
@@ -208,6 +215,10 @@ src
 <br>
 
 ### Post-MVP
+
+- Bookmarks
+- Notes
+- Completion certification
 
 
 <br>
