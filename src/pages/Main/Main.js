@@ -1,10 +1,11 @@
 import React from 'react'
 import './Main.css'
+import Search from '../../components/Search/Search'
 
 export default function Main() {
   return (
-    <div>
-      Main Page
-    </div>
+    <main>
+      <Search />
+    </main>
   )
 }

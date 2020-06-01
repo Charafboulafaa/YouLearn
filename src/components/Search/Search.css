@@ -1,0 +1,24 @@
+.search-form{
+  display: flex;
+  margin: 50px auto;
+  justify-content: center;
+}
+
+.search-form input[type='search']{
+  padding: 10px;
+  margin-right: 5px;
+  min-width: 300px;
+  font-size: 16px;
+  color: #282828;
+}
+
+.search-form button{
+  padding: 10px 20px;
+  background-color: #FF0000;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 2px;
+  cursor: pointer;
+}
