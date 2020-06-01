@@ -1,9 +1,11 @@
 import React from 'react'
+import heartIcon from './heart.svg'
+import './Footer.css'
 
 export default function Footer() {
   return (
-    <div>
-
-    </div>
+    <footer>
+      Developed by Charaf Boulafaa with <img src={heartIcon} className="heart-icon" alt="heart" /> in GA
+    </footer>
   )
 }
