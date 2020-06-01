@@ -1,9 +1,10 @@
 import React from 'react'
+import './Header.css'
 
 export default function Header() {
   return (
-    <div>
-
-    </div>
+    <header>
+      <h1><span>You</span>Learn</h1>
+    </header>
   )
 }
