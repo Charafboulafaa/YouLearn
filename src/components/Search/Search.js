@@ -12,7 +12,7 @@ export default function Search(props) {
 
     const res = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&q=${query}&type=playlist&key=${process.env.REACT_APP_API_KEY}`)
 
-    console.log(res.data.items)
+    props.setCourses(res.data.items)
 
   }
 
