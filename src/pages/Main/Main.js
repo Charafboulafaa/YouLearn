@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './Main.css'
 import Search from '../../components/Search/Search'
+import SearchResults from '../../components/SearchResults/SearchResults'
+import { Container } from 'react-bootstrap';
 
 export default function Main() {
 
@@ -8,7 +10,10 @@ export default function Main() {
 
   return (
     <main>
-      <Search setCourses={setCourses} />
+      <Container>
+        <Search setCourses={setCourses} />
+        <SearchResults coursesList={courses} />
+      </Container>
     </main>
   )
 }
