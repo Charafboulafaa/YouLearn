@@ -8,8 +8,17 @@ header h1{
   color: #282828;
   padding: 15px 0;
   margin: 0;
+  font-size: 30px;
+}
+header h1 a:hover{
+  text-decoration: none;
 }
 
 header h1 span{
   color: #FF0000;
+}
+
+header a,
+header a:hover{
+  color: #FFF;
 }
