@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/Header/Header'
 import Main from './pages/Main/Main'
 import MyCourses from './pages/MyCourses/MyCourses'
+import Learn from './pages/Learn/Learn'
 import Footer from './components/Footer/Footer'
 
 import {
@@ -21,6 +22,9 @@ export default function App() {
         </Route>
         <Route path="/mycourses">
           <MyCourses />
+        </Route>
+        <Route path="/learn/:courseId">
+          <Learn />
         </Route>
       </Switch>
 
