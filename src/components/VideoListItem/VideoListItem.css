@@ -1,0 +1,6 @@
+.single-video{
+  cursor: pointer;
+}
+.single-video:hover{
+  background-color: #fff2f1;
+}

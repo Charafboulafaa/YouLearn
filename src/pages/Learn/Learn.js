@@ -25,11 +25,6 @@ export default function Learn() {
     }
 
     apiCall()
-
-    console.log(course)
-    if (course.items !== undefined) {
-
-    }
   }, [])
 
   return (
@@ -42,7 +37,7 @@ export default function Learn() {
           </Col>
 
           <Col xs={4}>
-            {course.items && course.items.map((el) => <VideoListItem key={el.id} video={el}></VideoListItem>)}
+            {course.items && course.items.map((el) => <VideoListItem key={el.id} video={el} setSelectedVideoId={setSelectedVideoId}></VideoListItem>)}
           </Col>
         </Row>
 
