@@ -36,7 +36,7 @@ export default function Learn() {
             <Player videoId={selectedVideoId}></Player>
           </Col>
 
-          <Col xs={4}>
+          <Col xs={4} id="videoList">
             {course.items && course.items.map((el) => <VideoListItem key={el.id} video={el} setSelectedVideoId={setSelectedVideoId}></VideoListItem>)}
           </Col>
         </Row>
