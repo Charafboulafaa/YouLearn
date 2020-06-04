@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import { Container, Row, Col } from 'react-bootstrap'
+import VideoListItem from '../../components/VideoListItem/VideoListItem'
+import Player from '../../components/Player/Player'
+
 
 import './Learn.css'
 
@@ -9,6 +12,7 @@ import './Learn.css'
 export default function Learn() {
 
   const [course, setCourse] = useState({})
+  const [selectedVideoId, setSelectedVideoId] = useState('')
 
   let { courseId } = useParams()
 
@@ -28,21 +32,11 @@ export default function Learn() {
 
         <Row>
           <Col xs={8}>
-            Player
+            <Player videoId={selectedVideoId}></Player>
           </Col>
 
           <Col xs={4}>
-            <Container>
-              {course.items && course.items.map((el) => {
-                return (<Row className="my-2">
-                  <Col><img src={el.snippet.thumbnails.medium.url} /></Col>
-                  <Col>
-                    <div className="font-weight-bold">{el.snippet.title.slice(0, 40) + '...'}</div>
-                  </Col>
-
-                </Row>)
-              })}
-            </Container>
+            {course.items && course.items.map((el) => <VideoListItem key={el.id} video={el}></VideoListItem>)}
           </Col>
         </Row>
 
