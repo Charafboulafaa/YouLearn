@@ -21,9 +21,15 @@ export default function Learn() {
       const res = await axios.get(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=${courseId}&key=${process.env.REACT_APP_API_KEY}`)
 
       setCourse(res.data)
+      setSelectedVideoId(res.data.items[0].snippet.resourceId.videoId)
     }
 
     apiCall()
+
+    console.log(course)
+    if (course.items !== undefined) {
+
+    }
   }, [])
 
   return (
