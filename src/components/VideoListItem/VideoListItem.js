@@ -4,13 +4,13 @@ import './VideoListItem.css'
 
 export default function VideoListItem(props) {
 
-  const handleClick = (id) => {
-    console.log(id)
-    props.setSelectedVideoId(id)
+  const handleClick = (video) => {
+    props.setSelectedVideoId(video.snippet.resourceId.videoId)
+    props.setVideoDetails(video.snippet)
   }
 
   return (
-    <Row className="mb-1 py-2 single-video" onClick={() => props.setSelectedVideoId(props.video.snippet.resourceId.videoId)}>
+    <Row className="mb-1 py-2 single-video" onClick={() => handleClick(props.video)}>
       <Col><img src={props.video.snippet.thumbnails.medium.url} /></Col>
       <Col>
         <div className="font-weight-bold">{props.video.snippet.title.slice(0, 40) + '...'}</div>
