@@ -4,3 +4,10 @@
 .single-video:hover{
   background-color: #fff2f1;
 }
+
+.flex-grow-unset{
+  flex-grow: unset !important;
+}
+.col{
+  align-content: center;
+}

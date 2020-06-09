@@ -35,12 +35,12 @@ export default function Learn() {
       <Container>
 
         <Row>
-          <Col xs={8}>
+          <Col xs={12} lg={8}>
             <Player videoId={selectedVideoId}></Player>
             <VideoDetails details={videoDetails}></VideoDetails>
           </Col>
 
-          <Col xs={4} id="videoList">
+          <Col xs={12} lg={4} id="videoList">
             {course.items && course.items.map((el) => <VideoListItem key={el.id} video={el} setSelectedVideoId={setSelectedVideoId} setVideoDetails={setVideoDetails}></VideoListItem>)}
           </Col>
         </Row>
